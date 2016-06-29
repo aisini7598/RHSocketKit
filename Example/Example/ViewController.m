@@ -89,6 +89,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(detectSocketServiceState:) name:kNotificationSocketServiceState object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(detectSocketPacketResponse:) name:kNotificationSocketPacketResponse object:nil];
 
+    /**
+     *  add log
+     */
+    
+    NSLog(@"i am changed");
+    
     // Do any additional setup after loading the view, typically from a nib.
     
     _channelTestButton = [UIButton buttonWithType:UIButtonTypeCustom];
